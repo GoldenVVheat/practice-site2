@@ -1,0 +1,1572 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: calc(100% - 40px);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.1s ease;
+}
+
+.textNav {
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    gap: 40px;
+}
+
+.navDropdown {
+    position: relative;
+}
+
+.navDropdown summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.1s ease;
+}
+
+.navDropdown summary:hover {
+    color: #53B0FF;
+}
+
+.navMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    padding: 15px 20px;
+    background: white;
+    z-index: 10;
+}
+
+.navMenu a {
+    display: block;
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.navMenu a:last-child {
+    border: none;
+}
+
+.navMenu a:hover {
+    color: #53B0FF;
+}
+
+.servicesMenu a:hover {
+    color: #53B0FF;
+}
+
+.navigation a:hover {
+    color: #53B0FF;
+}
+
+.navPhone,
+.city {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.citySelect {
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    background: transparent;
+    border: none;
+    appearance: none;
+    transition: color 0.1s ease;
+}
+
+.citySelect option {
+    font-size: 12px;
+    font-weight: 400;
+    color: #222;
+    background-color: white;
+    transition: color 0.1s ease;
+}
+
+.citySelect:hover {
+    color: #53B0FF;
+}
+
+.nomer {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.heroMain {
+    width: 100%;
+    height: 805px;
+    background-image: url('images/hero-city-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    min-height: 720px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.heroContent {
+    display: grid;
+    grid-template-areas: "content";
+}
+
+.text {
+    grid-area: content;
+    font-weight: 600;
+    font-size: 48px;
+    width: 390px;
+}
+
+.punkt {
+    grid-area: content;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 50px;
+    margin-top: 200px;
+}
+
+.heroImage {
+    grid-area: content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.man {
+    width: 100%;
+    max-width: 505px;
+    height: auto;
+}
+
+.woman {
+    width: 100%;
+    max-width: 401px;
+    height: auto;
+    margin-left: -175px;
+}
+
+.heroCard {
+    grid-area: content;
+    justify-self: end;
+    align-self: center;
+    width: 380px;
+    height: 460px;
+    padding: 30px;
+    background-color: #005EA3B2;
+    border: 3px solid #53B0FF;
+    border-radius: 6px;
+    margin-top: -130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.heroCard h2 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.heroPhone {
+    display: flex;
+    background-color: #18589E;
+    border: 1px solid #4A8FCE;
+    border-radius: 6px;
+}
+
+.heroReviev {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    background-color: #18589E;
+    border: 1px solid #4A8FCE;
+    border-radius: 6px;
+}
+
+.heroButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #53B0FF;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.heroButton:hover {
+    background-color: white;
+    color: #1277D3;
+}
+
+.heroPhone,
+.heroButton {
+    width: 250px;
+    height: 50px;
+}
+
+.heroText {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.heroText a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.heroText a:hover {
+    text-decoration: underline;
+}
+
+.heroPhone input,
+.heroReviev textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    resize: none;
+}
+
+.oplata {
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 0;
+    top: 35%;
+    width: 50px;
+    height: 209px;
+    background-color: #003F84;
+    border-radius: 6px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    gap: 20px;
+}
+
+.ruble {
+    font-weight: 500;
+    font-size: 32px;
+    transform: rotate(90deg);
+}
+
+.sectionText {
+    font-weight: 500;
+    font-size: 46px;
+    color: #000000;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cardUslugi {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.cardItem {
+    display: grid;
+    grid-template-areas: "card";
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 2 / 1;
+}
+
+.cardItem * {
+    grid-area: card;
+}
+
+.cardItem a {
+    font-weight: 500;
+    font-size: 20px;
+    align-self: end;
+    justify-self: start;
+    margin: 30px 30px;
+    text-decoration: none;
+    color: white;
+    transition: text-decoration 0.2s ease;
+}
+
+.cardItem a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    justify-self: start;
+    align-self: start;
+    padding: 25px 30px;
+}
+
+.strelka {
+    align-self: end;
+    justify-self: end;
+    margin: 30px 40px;
+}
+
+.cardReviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.reviewsItem {
+    width: 415px;
+    height: 415px;
+    padding: 20px;
+    border: 1px solid #CDD1D8;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.ava {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+}
+
+.dateRew {
+    font-size: 12px;
+    color: #828282;
+    margin: 0 0 8px;
+}
+
+.nameRew {
+    font-size: 17px;
+    color: #1277D3;
+    margin: 0 0 20px;
+}
+
+.caseRew {
+    font-size: 14px;
+    color: #000000;
+}
+
+.revText {
+    clear: both;
+    font-weight: 300;
+    color: #000000;
+    line-height: 22px;
+    margin: 40px 0 30px;
+}
+
+.readMore {
+    color: #53B0FF;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.readMore:hover {
+    text-decoration: underline;
+}
+
+.solutionLink {
+    font-weight: 700;
+    color: #1277D3;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewButton {
+    margin: 100px auto;
+    width: 200px;
+    height: 50px;
+    background-color: #1987EC;
+    border: 2px solid #1987EC;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.reviewButton:hover{
+    background-color: white;
+    color: #1987EC;
+}
+
+.smi .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.smiContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.smiContent img {
+    max-width: 30%;
+    height: auto;
+}
+
+.smiText {
+    font-weight: 500;
+    font-size: 46px;
+    color: #000000;
+    text-align: center;
+    margin: 50px 50px;
+}
+
+.bid {
+    width: 100%;
+    height: 484px;
+    background-image: url('images/blue-pattern-background-1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+
+.bid .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.bid img {
+    width: 325px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.bid h2 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+    width: 500px;
+}
+
+.bid .heroText {
+    opacity: 50%;
+    margin-top: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.bidForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bid .heroText a {
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.bid .heroText a:hover {
+    text-decoration: underline;
+}
+
+.caseGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.caseItem {
+    width: 100%;
+    min-width: 0;
+    max-width: 400px;
+    aspect-ratio: 400 / 325;
+    padding: clamp(15px, 2vw, 30px);
+    border: 1px solid #CDD1D8;
+    display: flex;
+    flex-direction: column;
+}
+
+.caseTitle {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+}
+
+.caseItem h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 30px;
+}
+
+.caseDescription {
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+    margin-top: 25px;
+}
+
+.caseLink {
+    font-weight: 700;
+    font-size: 12px;
+    color: #1277D3;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.mission {
+    width: 100%;
+    height: 400px;
+    background-image: url('images/blue-pattern-background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+    padding: 50px 40px;
+}
+
+.mission h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px 0 50px;
+}
+
+.mission ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.mission li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mission li p {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.mission li span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.map {
+    width: 100%;
+    height: 632px;
+    background-image: url('images/office-map.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+
+.dolg {
+    width: 100%;
+    height: 513px;
+    background-image: url('images/blue-pattern-background-3.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.dolg .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 20px;
+}
+
+.dolg h1 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dolg .container > p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.buttonWhats, .buttonInst {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #53B0FF;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.buttonWhats:hover, .buttonInst:hover{
+    background-color: #53B0FF;
+}
+
+.footerTop {
+    padding: 35px;
+}
+
+.footerTop .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.footerLogo > img {
+    width: 150px;
+    height: auto;
+}
+
+.footerSocials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerSocials img {
+    width: 16px;
+    height: 16px;
+}
+
+.footerSocials img:hover{
+    filter: brightness(0);
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footerButton {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1987EC;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.footerButton:hover{
+    background-color: #000;
+}
+
+.footerPhone {
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footerContacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.footerPhone {
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footerContacts p:last-child {
+    color: #777;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 25px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p,
+.footer a {
+    color: #888;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer a {
+    transition: text-decoration 0.2s ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+
+    .navigation::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: 30px;
+        height: 55px;
+        background-image: url('images/menu.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px;
+    }
+
+    .textNav {
+        display: none;
+    }
+
+    .nomer {
+        font-size: 18px;
+    }
+
+    .citySelect {
+        font-size: 18px;
+    }
+
+    .heroMain {
+        height: auto;
+    }
+
+    .hero {
+        padding-top: 25px;
+    }
+
+    .heroContent {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text image"
+            "punkt image"
+            "form form";
+        align-items: end;
+    }
+
+    .text {
+        grid-area: text;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .punkt {
+        grid-area: punkt;
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 40px;
+        align-self: start;
+    }
+
+    .heroImage {
+        grid-area: image;
+        position: relative;
+    }
+
+    .man {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .woman {
+        width: 65%;
+        max-width: 300px;
+        margin-left: -22%;
+    }
+
+    .heroCard {
+        grid-area: form;
+        position: relative;
+        width: calc(100% + 40px);
+        height: auto;
+        margin: 0 -20px;
+        padding: 30px 20px;
+        border: none;
+        border-radius: 0;
+        background-image: url('images/blue-pattern-background-1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .heroCard h2 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .oplata{
+        display: none;
+    }
+
+    .heroPhone,
+    .heroReviev {
+        width: 416px;
+        max-width: 100%;
+    }
+
+    .heroPhone {
+        height: 50px;
+    }
+
+    .heroReviev {
+        height: 100px;
+    }
+
+    .heroText {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .sectionText {
+        font-size: 34px;
+        margin-top: 70px;
+    }
+
+    .cardUslugi {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+
+    .cardItem {
+        width: 80%;
+    }
+    
+    .cardItem a {
+        font-size: 17px;
+        margin: 20px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+        padding: 0;
+        margin: 15px;
+    }
+
+    .strelka {
+        margin: 20px;
+    }
+
+    .cardReviews {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .reviewsItem {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+    .reviewsItem:nth-child(n+4) {
+        display: none;
+    }
+
+    .revText {
+        margin: 25px 0;
+    }
+
+    .reviewButton {
+        margin: 50px auto;
+    }
+
+    .smi .container {
+        margin-top: 70px;
+    }
+
+    .smiContent {
+        gap: 15px;
+    }
+
+    .smiContent img:nth-child(3),
+    .smiContent img:nth-child(4) {
+        display: none;
+    }
+    
+    .smiContent img:nth-child(2) {
+        max-width: 70%;
+    }
+
+    .smiText {
+        font-size: 34px;
+        margin: 35px;
+    }
+
+       .bid {
+        height: auto;
+    }
+
+    .bid .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .bid img {
+        width: 100%;
+        max-width: 325px;
+        grid-row: 1 / 3;
+        align-self: end;
+    }
+
+    .bid h2 {
+        width: 100%;
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .bid .heroText {
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .bidForm {
+        width: 100%;
+        max-width: 350px;
+        grid-column: 2;
+    }
+
+    .bidForm .heroPhone{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .bidForm .heroButton{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .caseGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .mission {
+        height: auto;
+        padding: 40px 25px;
+    }
+
+    .mission h2 {
+        font-size: 28px;
+        margin: 20px 0 40px;
+    }
+
+    .mission ul {
+        gap: 30px;
+    }
+
+    .mission li {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .mission li p {
+        font-size: 48px;
+    }
+
+    .mission li span {
+        font-size: 14px;
+    }
+
+    .dolg {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .dolg .container {
+        display: grid;
+        grid-template-columns: repeat(2, 240px);
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .dolg h1,
+    .dolg .container > p,
+    .dolg .heroPhone,
+    .dolg .heroButton {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .dolg h1 {
+        font-size: 30px;
+    }
+
+    .dolg .heroPhone {
+        width: 400px;
+        max-width: 100%;
+    }
+
+    .dolg .container > p {
+        margin-top: 10px;
+    }
+
+    .footerTop .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .footerLogo {
+        align-items: flex-start;
+    }
+
+    .footerLinks:nth-child(2),
+    .footerLinks:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        width: calc(100% - 30px);
+    }
+
+    .header {
+        background: linear-gradient(to bottom, #125395 0 55px, transparent 55px);
+    }
+
+    .navigation {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 65px 15px 10px;
+        gap: 10px;
+    }
+
+    .navigation > img {
+        width: 100px;
+    }
+
+    .textNav {
+        display: none;
+    }
+
+    .navPhone {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        height: 55px;
+        gap: 5px;
+    }
+
+    .navPhone img {
+        display: none;
+    }
+
+    .nomer {
+        font-size: 12px;
+    }
+
+    .city {
+        gap: 5px;
+    }
+
+    .city img {
+        width: 14px;
+    }
+
+    .citySelect {
+        font-size: 10px;
+    }
+
+    .heroMain {
+        height: auto;
+    }
+
+    .hero {
+        padding-top: 15px;
+        min-height: 0;
+    }
+
+    .heroContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        width: 100%;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .punkt {
+        display: none;
+    }
+
+    .heroImage {
+        order: 2;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .man {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .woman {
+        width: 65%;
+        max-width: 200px;
+        margin-left: -22%;
+    }
+
+    .heroCard {
+        order: 3;
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+        padding: 25px 15px;
+    }
+
+    .heroCard h2 {
+        font-size: 17px;
+    }
+
+    .heroPhone,
+    .heroReviev {
+        width: 100%;
+    }
+
+    .heroPhone {
+        height: 40px;
+    }
+
+    .heroReviev {
+        height: 80px;
+    }
+
+    .heroPhone input,
+    .heroReviev textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .heroButton {
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .heroText {
+        font-size: 8px;
+    }
+
+    .sectionText {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .cardUslugi {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .cardItem {
+        width: 100%;
+    }
+
+    .cardItem a {
+        font-size: 16px;
+        margin: 15px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+        margin: 10px;
+    }
+
+    .strelka {
+        margin: 15px;
+    }
+
+    .cardReviews {
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .reviewsItem {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .ava {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .dateRew {
+        font-size: 10px;
+    }
+
+    .nameRew {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .caseRew {
+        clear: both;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .revText {
+        font-size: 14px;
+        line-height: 19px;
+        margin: 15px 0;
+    }
+
+    .solutionLink {
+        font-size: 9px;
+        gap: 5px;
+    }
+
+    .solutionLink img {
+        width: 16px;
+    }
+
+    .reviewButton {
+        margin: 30px auto;
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .smi .container {
+        margin-top: 40px;
+    }
+
+    .smiContent {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    .smiContent img:nth-child(2) {
+        order: 1;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .smiContent img:nth-child(1),
+    .smiContent img:nth-child(5) {
+        order: 2;
+        max-width: 25px;
+        width: 25px;
+    }
+
+    .smiText {
+        font-size: 24px;
+        margin: 25px 0;
+    }
+
+    .bid {
+        margin-top: 40px;
+        padding: 30px 0;
+    }
+
+    .bid .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .bid img {
+        display: none;
+    }
+
+    .bid h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .bid .heroText {
+        width: 100%;
+        text-align: center;
+        font-size: 9px;
+        margin-top: 10px;
+    }
+
+    .bidForm {
+        width: 100%;
+        align-items: center;
+    }
+
+    .bid .heroPhone,
+    .bid .heroButton {
+        width: 350px;
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .caseGrid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .caseItem {
+    width: 100%;
+    max-width: 400px;
+    height: 325px;
+    justify-self: center;
+    padding: 20px;
+    align-items: center;
+    }
+
+    .caseTitle,
+    .caseItem h3,
+    .caseDescription,
+    .caseLink {
+        width: 200px;
+        text-align: left;
+    }
+
+    .caseItem h3 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .caseDescription {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .caseLink {
+        margin-top: 25px;
+    }
+
+    .mission {
+        margin-top: 40px;
+        padding: 25px 15px;
+    }
+
+    .mission h2 {
+        font-size: 19px;
+        margin: 10px 0 25px;
+    }
+
+    .mission ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 10px;
+    }
+
+    .mission li {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .mission li p {
+        font-size: 36px;
+    }
+
+    .mission li span {
+        font-size: 11px;
+    }
+
+    .map {
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    .dolg .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .dolg h1 {
+        font-size: 24px;
+    }
+
+    .dolg .heroPhone {
+        width: 400px;
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .dolg .heroButton {
+        width: 250px;
+    }
+
+    .dolg .container > p {
+        font-size: 16px;
+    }
+
+    .buttonWhats,
+    .buttonInst {
+        grid-column: 1;
+        width: 400px;
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .footerTop .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .footerLogo {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footerSocials {
+        gap: 20px;
+    }
+
+    .footerLinks {
+        display: none;
+    }
+
+    .footerContacts {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
